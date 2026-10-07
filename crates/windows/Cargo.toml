@@ -1,6 +1,10 @@
 [package]
 name = "locus-windows"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
 
 [dependencies]
+crossbeam-channel.workspace = true
+locus-core = { path = "../core" }
+tracing.workspace = true
+windows.workspace = true

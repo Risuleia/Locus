@@ -1,6 +1,17 @@
 [package]
 name = "locus"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "Locus"
+path = "src/main.rs"
 
 [dependencies]
+crossbeam-channel.workspace = true
+locus-core = { path = "../../crates/core" }
+locus-dwm = { path = "../../crates/dwm" }
+locus-renderer = { path = "../../crates/renderer" }
+locus-windows = { path = "../../crates/windows" }
+tracing.workspace = true
+tracing-subscriber.workspace = true

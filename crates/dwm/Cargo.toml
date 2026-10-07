@@ -1,6 +1,10 @@
 [package]
 name = "locus-dwm"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
 
 [dependencies]
+locus-core = { path = "../core" }
+locus-windows = { path = "../windows" }
+tracing.workspace = true
+windows.workspace = true

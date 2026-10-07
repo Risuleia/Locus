@@ -1,6 +1,9 @@
 [package]
 name = "locus-core"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
 
 [dependencies]
+crossbeam-channel.workspace = true
+glam.workspace = true
+tracing.workspace = true
